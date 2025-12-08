@@ -8,7 +8,7 @@ st.subheader('Elliptical focusing mirrors')
 st.write("Typical case: elliptical optics to focus a source point to an image point using paraxial formulas") 
 p=st.text_input("insert p value (meters)", value="100")
 q=st.text_input("insert q value (meters)", value="10")
-theta=st.text_input("insert theta value (milliradians)", value="9")
+theta=st.text_input("insert grazing incidence theta value (milliradians)", value="9")
 thetag=float(theta)*1E-3
 r=float(p)
 rp=float(q)
