@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import scipy as sp
 
 st.title('Useful formulas for Xray optics')
 
