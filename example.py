@@ -24,8 +24,8 @@ x=np.arange(-0.5,0.5,0.001)
 y=a2*x**2+a3*x**3+a4*x**4
 #ypp=2*a2+3*2*a3*x+4*3*a4*x**2
 #r=1/max(ypp)
-#df = pd.DataFrame(y*1E6)
-#st.line_chart(df,x_label="mm",y_label="microns")
+df = pd.DataFrame(y*1E6)
+st.line_chart(df,x_label="mm",y_label="microns")
 
 st.write("Radius of curvature at middle point (Km): ",round(1/(2*a2)*1E-3,3)) 
 #st.write(r)
