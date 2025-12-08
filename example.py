@@ -24,7 +24,7 @@ y=a2*x**2+a3*x**3
 
 df = pd.DataFrame(y*1E6)
 
-st.line_chart(df)
+st.line_chart(df,x_label="mm",y_label="microns")
   
   
 
