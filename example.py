@@ -6,7 +6,6 @@ st.title('Useful formulas for Xray optics')
 
 st.subheader('Number of pickups by hour')
 
-Print("
 chart_data = pd.DataFrame(
      np.random.randn(20, 3),
      columns=['a', 'b', 'c'])
