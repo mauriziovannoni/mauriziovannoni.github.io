@@ -14,5 +14,18 @@ r=float(p)
 rp=float(q)
 u=np.cos(thetag)*(1/r-1/rp)
 v=1/(r*rp)
+a0=0
+a1=0
+a2=np.sin(thetag)/4*(1/r+1/rp)
+a3=a2*u/2
+
+x=np.arange(-0.5,0.5,0.001)
+y=a2*x**2+a3*x**3
+
+df = pd.DataFrame(y)
+
+st.line_chart(df)
+  
+  
 
 
