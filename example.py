@@ -18,10 +18,11 @@ a0=0
 a1=0
 a2=np.sin(thetag)/4*(1/r+1/rp)
 a3=a2*u/2
+a4=a2*(5*u**2/16+v/4)
 
 x=np.arange(-0.5,0.5,0.001)
-y=a2*x**2+a3*x**3
-ypp=2*a2+3*2*a3*x
+y=a2*x**2+a3*x**3+a4*x**4
+ypp=2*a2+3*2*a3*x+4*3*a4*x**2
 
 df = pd.DataFrame(y*1E6)
 
