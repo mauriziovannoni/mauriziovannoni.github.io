@@ -22,7 +22,7 @@ a3=a2*u/2
 x=np.arange(-0.5,0.5,0.001)
 y=a2*x**2+a3*x**3
 
-df = pd.DataFrame(y)
+df = pd.DataFrame(y*1E6)
 
 st.line_chart(df)
   
