@@ -26,7 +26,7 @@ ypp=2*a2+3*2*a3*x
 df = pd.DataFrame(y*1E6)
 
 st.line_chart(df,x_label="mm",y_label="microns")
-st.write("Radius of curvature at middle point (Km): ",1/(2*a2)*1E-3) 
+st.write("Radius of curvature at middle point (Km): ",round(1/(2*a2)*1E-3,3)) 
 
   
 
