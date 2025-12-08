@@ -8,11 +8,11 @@ st.subheader('Elliptical focusing mirrors')
 st.write("Typical case: elliptical optics to focus a source point to an image point using paraxial formulas") 
 st.text_input("insert p value (meters)", value="100")
 st.text_input("insert q value (meters)", value="10")
-st.text_input("insert $\theta$ value (milliradians)", value="9")
+st.text_input("insert theta value (milliradians)", value="9")
+theta=theta*1E-3
+r=p
+rp=q
+u=np.cos(theta)*(1/r-1/rp)
+v=1/(r*rp)
 
 
-chart_data = pd.DataFrame(
-     np.random.randn(20, 3),
-     columns=['a', 'b', 'c'])
-
-st.line_chart(chart_data)
