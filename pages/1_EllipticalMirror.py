@@ -29,11 +29,11 @@ prof_bestParab=np.polyval(coeff,x)
 prof_bestParabRem=y-prof_bestParab
 df = pd.DataFrame(y*1E6)
 st.line_chart(df,x_label="mm",y_label="microns")
-st.write("Calculated ellipse profile")
+st.caption("Calculated ellipse profile")
 
 df = pd.DataFrame(prof_bestParabRem*1E9)
 st.line_chart(df,x_label="mm",y_label="nm")
-st.write("Calculated ellipse profile minus best parabola profile")
+st.caption("Calculated ellipse profile minus best parabola profile")
 
 st.write("Radius of curvature at middle point (Km): ",round(1/(2*a2)*1E-3,3)) 
 st.write("Radius of curvature of best parabola (Km): ",round(1/(2*coeff[0])*1E-3,3)) 
