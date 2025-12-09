@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import plotly.express as px
 st.set_page_config(page_title="Elliptical mirror", page_icon="")
 st.markdown("# Elliptical mirror")
 st.sidebar.header("Elliptical mirror")
@@ -31,11 +30,9 @@ prof_bestParabRem=y-prof_bestParab
 df = pd.DataFrame(y*1E6)
 st.line_chart(df,x_label="mm",y_label="microns")
 df = pd.DataFrame(prof_bestParabRem*1E9)
-plot = px.line(df, x = 'x', y = ['prof_bestParabRem'])
-st.plotly_chart(plot)
-
 st.line_chart(df,x_label="mm",y_label="nm")
 st.write("Radius of curvature at middle point (Km): ",round(1/(2*a2)*1E-3,3)) 
+st.write("Radius of curvature of best parabola (Km): ",round(1/(2*coeff[0])*1E-3,3)) 
 #st.write(r)
 
 #df = pd.DataFrame(ypp)
