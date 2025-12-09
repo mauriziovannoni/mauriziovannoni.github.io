@@ -9,11 +9,6 @@ st.sidebar.header("Elliptical mirror")
 st.write(
     """This page is a collection of useful calculation tools for daily life dealing with elliptical mirrors, for example for K-B systems. Enjoy!"""
 )
-
-
-st.title('Useful formulas for Elleptical mirrors')
-
-st.subheader('Elliptical focusing mirrors')
 st.write("Typical case: elliptical optics to focus a source point to an image point using paraxial formulas") 
 p=st.text_input("insert p value (meters)", value="100")
 q=st.text_input("insert q value (meters)", value="10")
