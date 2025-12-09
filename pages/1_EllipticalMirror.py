@@ -29,9 +29,8 @@ prof_bestParab=np.polyval(coeff,x)
 prof_bestParabRem=y-prof_bestParab
 df = pd.DataFrame(y*1E6)
 st.line_chart(df,x_label="mm",y_label="microns")
-#df = pd.DataFrame(profbestParab*1E6)
-#st.line_chart(df,x_label="mm",y_label="microns",title="bb")
-
+df = pd.DataFrame(profbestParab*1E6)
+st.line_chart(df,x_label="mm",y_label="microns")
 st.write("Radius of curvature at middle point (Km): ",round(1/(2*a2)*1E-3,3)) 
 #st.write(r)
 
