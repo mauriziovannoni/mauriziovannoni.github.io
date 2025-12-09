@@ -2,12 +2,12 @@ mport streamlit as st
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="Elleptical mirror", page_icon="")
+st.set_page_config(page_title="Elliptical mirror", page_icon="")
 
-st.markdown("# Elleptical mirror")
-st.sidebar.header("Elleptical mirror")
+st.markdown("# Elliptical mirror")
+st.sidebar.header("Elliptical mirror")
 st.write(
-    """This page is a collection of useful calculation tools for daily life dealing with elleptical mirrors, for example for K-B systems. Enjoy!"""
+    """This page is a collection of useful calculation tools for daily life dealing with elliptical mirrors, for example for K-B systems. Enjoy!"""
 )
 
 
