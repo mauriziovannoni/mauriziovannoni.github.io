@@ -2,7 +2,16 @@ mport streamlit as st
 import numpy as np
 import pandas as pd
 
-st.title('Useful formulas for Xray optics')
+st.set_page_config(page_title="Elleptical mirror", page_icon="")
+
+st.markdown("# Elleptical mirror")
+st.sidebar.header("Elleptical mirror")
+st.write(
+    """This page is a collection of useful calculation tools for daily life dealing with elleptical mirrors, for example for K-B systems. Enjoy!"""
+)
+
+
+st.title('Useful formulas for Elleptical mirrors')
 
 st.subheader('Elliptical focusing mirrors')
 st.write("Typical case: elliptical optics to focus a source point to an image point using paraxial formulas") 
