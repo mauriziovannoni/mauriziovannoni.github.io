@@ -24,7 +24,7 @@ a4=a2*(5*u**2/16+v/4)
 
 x=np.arange(-0.5,0.5,0.001)
 y=a2*x**2+a3*x**3+a4*x**4
-coeff=np.polyfit(x,y,2)
+#coeff=np.polyfit(x,y,2)
 #prof_bestParab=np.polyval(coeff,x)
 #prof_bestParabRem=y-prof_bestParab
 df = pd.DataFrame(y*1E6)
