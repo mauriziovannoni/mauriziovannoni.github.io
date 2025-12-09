@@ -28,7 +28,7 @@ y=a2*x**2+a3*x**3+a4*x**4
 #prof_bestParab=np.polyval(coeff,x)
 #prof_bestParabRem=y-prof_bestParab
 df = pd.DataFrame(y*1E6)
-st.line_chart(df,x_label="mm",y_label="microns",title="aa")
+st.line_chart(df,x_label="mm",y_label="microns")
 #df = pd.DataFrame(profbestParab*1E6)
 #st.line_chart(df,x_label="mm",y_label="microns",title="bb")
 
